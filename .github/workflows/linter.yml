@@ -4,7 +4,7 @@ on:
   push:
     branches: [master]
   pull_request:
-    branches: [master]
+    branches: all
 
 jobs:
   prettier:
@@ -62,3 +62,21 @@ jobs:
       - name: Run HTML Validator
         run: |
           npm run html-validator
+
+  webhint:
+    name: Webhint
+    runs-on: ubuntu-latest
+    if: always()
+
+    steps:
+      - name: Checkout 🛎️
+        uses: actions/checkout@v2
+      - name: Set up Node 12.x
+        uses: actions/setup-node@v1
+        with:
+          node-version: 12.x
+      - name: Install required dependency for node
+        run: |
+          npm install
+      - name: Webhint Report
+        run: npx hint --telemetry=off .
