@@ -1,9 +1,6 @@
 name: Checks
 
-on:
-  push:
-    branches: [master]
-  pull_request:
+on: push
 
 jobs:
   prettier:
@@ -42,25 +39,6 @@ jobs:
       - name: Run StyleLint
         run: |
           npm run lint:check
-
-  html:
-    name: HTML Validator
-    runs-on: ubuntu-latest
-    if: always()
-
-    steps:
-      - name: Checkout 🛎️
-        uses: actions/checkout@v2
-      - name: Set up Node 12.x
-        uses: actions/setup-node@v1
-        with:
-          node-version: 12.x
-      - name: Install required dependency for node
-        run: |
-          npm install
-      - name: Run HTML Validator
-        run: |
-          npm run html-validator
 
   webhint:
     name: Webhint
