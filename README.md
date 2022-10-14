@@ -4,7 +4,7 @@
 
 ![screenshot](./app_screenshot.png)
 
-Additional description about the project and its features.
+Additional description of the project and its features.
 
 ## Built With
 
@@ -28,37 +28,37 @@ git clone https://github.com/user/html-css-template.git
 - Install Dependencies
 
 ```bash
-npm install
+yarn install
 ```
 
 To run StyleLint by itself, you may run the lint task:
 
 ```bash
-npm run lint:check
+yarn lint:check
 ```
 
 Or to automatically fix issues found (where possible):
 
 ```bash
-npm run lint
+yarn lint
 ```
 
 You can also check against Prettier:
 
 ```bash
-npm run format:check
+yarn format:check
 ```
 
-and to have it actually fix (to the best of its ability) any format issues, run:
+and to have it fix (to the best of its ability) any format issues, run:
 
 ```bash
-npm run format
+yarn format
 ```
 
-You can also check against HTML Validator:
+You can also check against Webhint:
 
 ```bash
-npm run html-validator
+yarn hint
 ```
 
 ## Style Guides

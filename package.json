@@ -4,18 +4,18 @@
   "private": true,
   "dependencies": {},
   "devDependencies": {
-    "hint": "^6.1.0",
-    "prettier": "1.18.2",
-    "stylelint": "^13.6.1",
-    "stylelint-config-recommended": "^3.0.0",
-    "stylelint-config-standard": "^20.0.0",
-    "stylelint-csstree-validator": "^1.8.0",
-    "stylelint-scss": "^3.18.0"
+    "hint": "^7.x",
+    "prettier": "2.x",
+    "stylelint": "^14.x",
+    "stylelint-config-recommended": "^9.x",
+    "stylelint-config-standard": "^28.x",
+    "stylelint-csstree-validator": "^2.x"
   },
   "scripts": {
-    "format": "npx prettier  --write **/*.{html,js,json,md,json,yaml,yml,jsx}",
-    "format:check": "npx prettier  --check **/*.{html,js,json,md,json,yaml,yml}",
-    "lint": "npx stylelint **/*.css --fix",
-    "lint:check": "npx stylelint **/*.css"
+    "format": "prettier  --write \"**/*.{html,js,json,md,yml}\"",
+    "format:check": "prettier  --check \"**/*.{html,js,json,md,yml}\"",
+    "lint": "stylelint \"**/*.css\" --fix",
+    "lint:check": "stylelint \"**/*.css\"",
+    "hint": "hint --telemetry=off ."
   }
 }
