@@ -6,4 +6,6 @@ This imports the `reset.css` file */
 body {
   font-size: max(20vw, 400px);
   width: min(20vw, 400px);
+  margin: 20px;
+  padding: 0;
 }

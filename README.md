@@ -21,7 +21,7 @@ Additional description of the project and its features.
 - Clone the project
 
 ```bash
-git clone https://github.com/user/html-css-template.git
+git clone https://github.com/bolah2009/html-css-template.git
 
 ```
 
@@ -55,10 +55,16 @@ and to have it fix (to the best of its ability) any format issues, run:
 yarn format
 ```
 
-You can also check against Webhint:
+You can also check against HTML Validator (htmlhint):
 
 ```bash
-yarn hint
+yarn lint:html
+```
+
+To generate an accessibility report for this webpage, run the below command, it uses axe:
+
+```bash
+yarn axe
 ```
 
 ## Style Guides
@@ -67,6 +73,7 @@ yarn hint
 - [HTML Style Guide](http://udacity.github.io/frontend-nanodegree-styleguide/index.html)
 - [JavaScript Style Guide](http://udacity.github.io/frontend-nanodegree-styleguide/javascript.html)
 - [Git Style Guide](https://udacity.github.io/git-styleguide/)
+- [AXE Accessibility Style Guide](https://dequeuniversity.com/rules/axe/html/4.7)
 
 ## 👤 Author
 
