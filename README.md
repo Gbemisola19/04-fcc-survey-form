@@ -1,4 +1,5 @@
 # FCC SURVEY FORM
+
 This is a project that contains basic`HTML` and `CSS` element
 
 ![survey form](./app_screenshot.png)
@@ -8,14 +9,14 @@ Additional description of the project and its features.
 ## Built With
 
 - HTML elements,
-  - `div`, `form`, `label`, `section`, 
+  - `div`, `form`, `label`, `section`,
   - `text-area`, `placeholder`
 - CSS
   - `padding`, `root`, `color`
-  `background-color`, `margin`, `font-size`
+  - `background-color`, `margin`, `font-size`
 - Linters
- - [prettier](https://prettier.io/)
- - [stylelint](https://stylelint.io/)
+  - [prettier](https://prettier.io/)
+  - [stylelint](https://stylelint.io/)
 
 ## Live Demo
 
