@@ -16,34 +16,37 @@
       </header>
       <form id="survey-form">
         <div class="form-group">
-          <label id="name-label" for="name">Name</label>
+          <label for="name">Name</label>
           <input
             class="form-control"
             id="name"
             name="name"
             type="text"
+            aria-label="name"
             placeholder="Enter your name"
             required
           />
         </div>
         <div class="form-group">
-          <label id="email-label" for="email">Email</label>
+          <label for="email">Email</label>
           <input
             class="form-control"
             id="email"
             name="email"
             type="email"
+            aria-label="email"
             placeholder="Enter your Email"
             required
           />
         </div>
         <div class="form-group">
-          <label id="number-label" for="number">Age<span class="clue">(optional)</span></label>
+          <label for="number">Age<span class="clue">(optional)</span></label>
           <input
             class="form-control"
             id="number"
             name="age"
             type="number"
+            aria-label="number"
             min="10"
             max="99"
             placeholder="Age"
@@ -51,7 +54,7 @@
         </div>
         <div class="form-group">
           <p>Which option best describes your current role?</p>
-          <select class="form-control" id="dropdown" name="role" type="" min="" max="" required>
+          <select class="form-control" id="dropdown" name="role" type="" aria-label="dropdown" min="" max="" required>
             <option value="student" disabled="" selected="">Select current role</option>
             <option value="student" disabled="" selected="">Student</option>
             <option value="job">Full Time Job</option>
@@ -63,25 +66,27 @@
 
         <div class="form-group">
           <p>Would you recommend freeCodeCamp to a friend?</p>
-          <label>
+          <label for="radio"></label>
+          <input
+            class="input-radio"
+            id="radio"
+            name="user-recommend"
+            type="radio"
+            value="definitely"
+            aria-label="radio"
+            checked
+          />Definitely
+          <label for="input-radio">
             <input
               class="input-radio"
-              name="user-recommend"
-              type="radio"
-              value="definitely"
-              checked
-            />Definitely</label
-          >
-          <label>
-            <input
-              class="input-radio"
+              id="input-radio"
               name="user-recommend"
               type="radio"
               value="maybe"
             />Maybe</label
           >
 
-          <label
+          <label for="input-radio"
             ><input class="input-radio" name="user-recommend" type="radio" value="not-sure" />Not
             sure</label
           >
@@ -89,7 +94,7 @@
 
         <div class="form-group">
           <p>What is your favorite feature of freeCodeCamp?</p>
-          <select class="form-control" id="most-like" name="mostLike" required>
+          <select class="form-control" id="most-like" name="mostLike" aria-label="most-like" required>
             <option value="student" disabled="" selected="">Select an option</option>
             <option value="challenges" disabled="" selected="">Challenges</option>
             <option value="projects" disabled="" selected="">Projects</option>
@@ -191,6 +196,7 @@
             class="input-textarea"
             id="comments"
             name="comment"
+            aria-label="comment"
             placeholder="Enter your comment here..."
           ></textarea>
         </div>
