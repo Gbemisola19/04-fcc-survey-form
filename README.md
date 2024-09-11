@@ -1,6 +1,6 @@
 # Fcc Survey form
 
-> One paragraph statement about the project.
+> One paragraph statement about the project in the picture.
 
 ![screenshot](./app_screenshot.png)
 
