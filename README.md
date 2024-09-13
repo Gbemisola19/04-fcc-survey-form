@@ -15,8 +15,8 @@ Additional description of the project and its features.
   - `padding`, `root`, `color`
   - `background-color`, `margin`, `font-size`
 - Linters
-  - [prettier](https://prettier.io/)
-  - [stylelint](https://stylelint.io/)
+  - [Prettier](https://prettier.io/)
+  - [Stylelint](https://stylelint.io/)
 
 ## Live Demo
 
