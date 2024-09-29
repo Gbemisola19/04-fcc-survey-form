@@ -1,4 +1,4 @@
-# FCC SURVEY FORM
+# FCC Survey Form
 
 This is a project that contains basic`HTML` and `CSS` element
 
